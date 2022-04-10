@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Music">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/en"
+        android:id="@+id/imz"
+        />
+    <ToggleButton
+        android:layout_below="@id/imz"
+        android:id="@+id/A1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="40dp"
+        android:text="ToggleButton"
+        android:textOff="Pause"
+        android:textOn="Play"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:layout_below="@id/A1"
+        android:id="@+id/A2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        android:text="ToggleButton"
+        android:textOff="Pause"
+        android:textOn="Play"
+        app:layout_constraintEnd_toStartOf="@+id/A1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:layout_below="@id/A2"
+        android:id="@+id/A3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        android:text="ToggleButton"
+        android:textOff="Pause"
+        android:textOn="Play"
+        app:layout_constraintEnd_toStartOf="@+id/A1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="-36dp"
+        android:text="1: Track smooth music"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/A1"
+        />
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="-36dp"
+        android:text="2: Track Rock on music"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_below="@id/A2"/>
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="-36dp"
+        android:text="2: Breez music"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_below="@id/A3"/>
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Abouts">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="230dp"
+        android:id="@+id/card1"
+        android:layout_height="280dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rel"
+            android:layout_height="400dp">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:background="@drawable/k" />
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/stars"
+                android:layout_below="@id/image1"
+                android:id="@+id/image2"
+                android:layout_height="60dp"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="150dp"
+                android:text="CEO of MX player"
+                android:layout_below="@+id/image2"
+                android:textSize="14dp"
+                android:id="@+id/text1"
+                android:textColor="@color/black"
+                android:layout_height="20dp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_below="@id/card1"
+        android:id="@+id/card2"
+        android:layout_height="140dp">
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="270dp">
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:layout_width="130dp"
+                android:layout_height="110dp"
+                android:background="@drawable/manager"
+                android:id="@+id/xyz"/>
+            >
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/xyz"
+                android:id="@+id/ec"
+                android:background="@drawable/stars"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/ec"
+                android:layout_width="79dp"
+                android:layout_height="50dp"
+                android:textSize="12dp"
+                android:text="Manager of MX player"
+                />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="210dp"
+        android:layout_width="250dp"
+        android:id="@+id/card3"
+        android:layout_height="400dp">
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="320dp">
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_width="150dp"
+                android:layout_height="210dp"
+                android:background="@drawable/hr"
+                android:id="@+id/xyz1"/>
+            >
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/xyz1"
+                android:id="@+id/ec1"
+                android:background="@drawable/stars"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/ec1"
+                android:layout_marginTop="20dp"
+                android:layout_width="195dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                android:text="SENIOR HR of MX player"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/card3"
+        android:layout_marginLeft="200dp"
+        android:layout_width="140dp"
+        android:id="@+id/card4"
+        android:layout_height="250dp">
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="140dp">
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_width="150dp"
+                android:layout_height="210dp"
+                android:background="@drawable/images"
+                android:id="@+id/xyz2"/>
+            >
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/xyz2"
+                android:id="@+id/ec2"
+                android:background="@drawable/stars"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/ec2"
+                android:layout_marginTop="20dp"
+                android:layout_width="195dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                android:text="Junior HR of MX player"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
